@@ -7,11 +7,229 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
 
     <title>Proyecto Integrador</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- <h1>Hello, world!</h1> -->
+    <nav class="navbar navbar-expand-lg fixed-top g-0" id="navbar">
+      <div class="container-fluid  g-0">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logosuper.png" alt="Logo super"/> Supermercado A</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end container-fluid">
+            <li class="nav-item">
+              <a class="nav-link" href="#establecimiento">Establecimiento</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#empleado">Los empleados</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#lugar">El lugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conviertete">Conviertete en franquicia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://diaonline.supermercadosdia.com.ar/" target="_blank">Comprar</a>
+            </li>
+              
+        </div>
+      </div>
+    </nav>
+
+    <header id="establecimiento">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/stand001.jpg" class="d-block w-100" alt="...">
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Supermercado Mayorista </h5>
+                  <p>Un establecimiento unico para nuestra comunidad</p>
+                  <div>
+                    <a type="button" class="btn btn-primary" href="#conviertete">Quiero formar parte</a>
+                    <a type="button" class="btn btn-primary" href="https://diaonline.supermercadosdia.com.ar/" target="_blank">Comprar</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/stand002.jpg" class="d-block w-100" alt="...">
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Sucursal Bs As</h5>
+                  <p>En Buenos aires se encuentra la sucursal que cuento con grandes cantidades de productos a disposición.</p>
+                  <div>
+                    <a type="button" class="btn btn-primary" href="#conviertete">Quiero formar parte</a>
+                    <a type="button" class="btn btn-primary" href="https://diaonline.supermercadosdia.com.ar/" target="_blank">Comprar</a>
+                  </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+            <img src="img/stand003.jpg" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sucursal interior</h5>
+                <p>Encontrarás productos que solo podrían llegar por envios.</p>
+                <div>
+                  <a type="button" class="btn btn-primary" href="#conviertete">Quiero formar parte</a>
+                  <a type="button" class="btn btn-primary" href="#informacion" target="_blank">Para saber más </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+<!-- Sección empleados -->
+<section id="empleado">
+  <div class="container">
+    <div class="row text-center titulos">
+      <h6>conoce a los</h6>
+      <h2>empleados</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/empleado001.jpg" class="card-img-top" alt="Gerente">
+            <div class="card-body">
+              <div>
+                <span class="badge bg-warning">Javascrip</span>
+                <span class="badge bg-info">Poleras</span>
+              </div>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Integrante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/empleado002.jpg" class="card-img-top" alt="director">
+            <div class="card-body">
+              <div>
+                <span class="badge bg-danger">Monopolios</span>
+                <span class="badge bg-primary">BSOD</span>
+              </div>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">Integrante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/empleado003.jpg" class="card-img-top" alt="vicepresidenta">
+            <div class="card-body">
+              <div>
+                <span class="badge bg-info">Historia</span>
+                <span class="badge bg-success">Algoritmos</span>
+              </div>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">Integrante.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+<!-- Fin sección -->
+
+ <!-- Inicio sección lugar -->
+ <section class="container-fluid turismo mt-5" id="lugar">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 g-0">
+      <img src="img/bsas.jpg" alt="buenosaires"/>
+    </div>
+    <div class="col-lg-6 col-sm-12 g-0 p-5">
+      <h5>Bs As - Octubre</h5>
+      <p>Buenos Aires es la provincia mas grande del estado de Argentina </p>
+      <a type="button" class="btn btn-primary" href="#conviertete">Inscribite</a>
+    </div>
+  </div>
+</section>
+<!-- Fin sección -->
+
+
+<!-- Inicio formulario de inscripción a franquicia -->
+<section id="conviertete">
+  <div class="container">
+    <div class="row text-center titulos">
+      <h6 class=>conviértete en</h6>
+      <h2>franquicia</h2>
+    </div>
+  </div>
+  
+  <div class="container">
+    <p class="text-center">Inscribite como franquicia para llegar a mas lugares <a href="https://diaonline.supermercadosdia.com.ar/franquicias" target="_blank">Franquicias</a>. Cuéntanos de qué zona sos!</p>
+    <form action="#">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" placeholder="Nombre" required>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <textarea class="form-control" placeholder="Comenta como será tu proyecto" id="floatingTextarea" rows="4"  required></textarea>
+            <label for="textarea">Recuerda incluir un título para tu franquicia</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary container-fluid">Enviar</button>
+    </form>
+  </div>
+</section>
+<!-- Fin sección formulario de contacto -->
+
+
+
+<footer class="container-fluid p-2">
+    <div class="container">
+        <ul class="row nav">
+          <li class="col nav-item">
+            <a href="#">Preguntas Frecuentes</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Contáctanos</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Prensa</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Conferencias</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Términos y condiciones</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Privacidad</a>
+          </li>
+          <li class="col nav-item">
+            <a href="#">Estudiantes</a>
+          </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
